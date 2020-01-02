@@ -1,0 +1,8 @@
+C:\Users\dev01\source\repos\ExtendsApi\ExtendsApi\bin\Debug\netcoreapp3.0\ExtendsApi.deps.json
+C:\Users\dev01\source\repos\ExtendsApi\ExtendsApi\bin\Debug\netcoreapp3.0\ExtendsApi.dll
+C:\Users\dev01\source\repos\ExtendsApi\ExtendsApi\bin\Debug\netcoreapp3.0\ExtendsApi.pdb
+C:\Users\dev01\source\repos\ExtendsApi\ExtendsApi\obj\Debug\netcoreapp3.0\ExtendsApi.csprojAssemblyReference.cache
+C:\Users\dev01\source\repos\ExtendsApi\ExtendsApi\obj\Debug\netcoreapp3.0\ExtendsApi.AssemblyInfoInputs.cache
+C:\Users\dev01\source\repos\ExtendsApi\ExtendsApi\obj\Debug\netcoreapp3.0\ExtendsApi.AssemblyInfo.cs
+C:\Users\dev01\source\repos\ExtendsApi\ExtendsApi\obj\Debug\netcoreapp3.0\ExtendsApi.dll
+C:\Users\dev01\source\repos\ExtendsApi\ExtendsApi\obj\Debug\netcoreapp3.0\ExtendsApi.pdb

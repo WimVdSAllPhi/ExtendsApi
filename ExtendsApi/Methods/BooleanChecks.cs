@@ -75,5 +75,24 @@ namespace ExtendsApi.Methods
                 );
             return response;
         }
+        
+        public static bool CheckSomeFields(this object element, Dictionary<string, string> ContainsSomeFields)
+        {
+            var response = false;
+            foreach (var item in ContainsSomeFields)
+            {
+                var x = GetPropValue(element, item.Key);
+                response = x.ToString().CheckContains(item.Value);
+                if (response == true)
+                    break;
+            }
+
+            return response;
+        }
+
+        public static object GetPropValue(object src, string propName)
+        {
+            return src.GetType().GetRuntimeProperty(propName)?.GetValue(src, null);
+        }
     }
 }

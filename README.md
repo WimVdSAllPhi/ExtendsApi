@@ -1,13 +1,17 @@
 # ExtendsApi
+[![latest version](https://img.shields.io/nuget/v/ExtendsApi)](https://www.nuget.org/packages/ExtendsApi/) [![downloads](https://img.shields.io/nuget/dt/ExtendsApi)](https://www.nuget.org/packages/ExtendsApi)
+
 Extends the most common things from an API
 
-## How to get it?
-To use it you can download it :
-- NuGet Package Manager (search for ```ExtendsApi``` and you will find it)
-- Command line
-  - PM: ```Install-Package ExtendsApi -Version 1.0.4```
-  - .NET CLI: ```dotnet add package ExtendsApi --version 1.0.4```
-  - Package Reference: ```<PackageReference Include="ExtendsApi" Version="1.0.4" />```
-  - Paket CLI: ```paket add ExtendsApi --version 1.0.4```
+### Installation
 
-NuGet Link : [link to ExtendsApi!](https://www.nuget.org/packages/ExtendsApi/)
+ExtendsApi is available on [NuGet](https://www.nuget.org/packages/ExtendsApi).
+
+```sh
+dotnet add package ExtendsApi
+```
+
+Use the `--version` option to specify a [preview version](https://www.nuget.org/packages/ExtendsApi/absoluteLatest) to install.
+
+Use the [daily builds](https://github.com/dotnet/aspnetcore/blob/master/docs/DailyBuilds.md) to verify bug fixes and provide early feedback.
+

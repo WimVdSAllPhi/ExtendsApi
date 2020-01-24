@@ -50,6 +50,23 @@ namespace ExtendsApi.DataLayer
             return table.Where(predicate).GetPaged(page, pageSize);
         }
 
+
+        /// <summary>
+        /// Never use this function want if db table to big it slow down everything
+        /// Instead use <see cref="FilterByPagination(Func&lt;TEntity, bool&gt;, int, int)" />
+        /// </summary>
+        /// <returns>List of ALL elements in the table</returns>
+        public IQueryable<TEntity> FilterOrder(Func<TEntity, bool> predicate, OrderExtention orderExtention)
+        {
+            return OrderList<TEntity>.Order(table.Where(predicate).AsQueryable(), orderExtention);
+        }
+
+        public PagedResult<TEntity> FilterOrderByPagination(Func<TEntity, bool> predicate, OrderExtention orderExtention, int page, int pageSize)
+        {
+            return OrderList<TEntity>.Order(table.Where(predicate).AsQueryable(), orderExtention).GetPaged(page, pageSize);
+        }
+
+
         public TEntity GetByOne(Func<TEntity, bool> predicate)
         {
             return table.FirstOrDefault(predicate);

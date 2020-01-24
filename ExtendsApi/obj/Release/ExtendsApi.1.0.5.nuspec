@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
     <id>ExtendsApi</id>
-    <version>1.0.1</version>
+    <version>1.0.5</version>
     <authors>V.d.S Wim</authors>
     <owners>V.d.S Wim</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -18,6 +18,6 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="C:\Users\dev01\source\repos\ExtendsApi\ExtendsApi\bin\Release\netcoreapp3.0\ExtendsApi.dll" target="lib\netcoreapp3.0\ExtendsApi.dll" />
+    <file src="C:\Users\dev01\Desktop\ExtendsApi\ExtendsApi\bin\Release\netcoreapp3.0\ExtendsApi.dll" target="lib\netcoreapp3.0\ExtendsApi.dll" />
   </files>
 </package>

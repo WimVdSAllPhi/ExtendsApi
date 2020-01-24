@@ -4603,7 +4603,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
-    "version": "1.0.3",
+    "version": "1.0.5",
     "restore": {
       "projectUniqueName": "C:\\Users\\dev01\\Desktop\\ExtendsApi\\ExtendsApi\\ExtendsApi.csproj",
       "projectName": "ExtendsApi",

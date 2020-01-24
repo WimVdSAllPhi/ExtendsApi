@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Reflection;
 
 namespace ExtendsApi.Methods
 {
@@ -75,7 +77,7 @@ namespace ExtendsApi.Methods
                 );
             return response;
         }
-        
+
         public static bool CheckSomeFields(this object element, Dictionary<string, string> ContainsSomeFields)
         {
             var response = false;

@@ -15,7 +15,7 @@
     <Copyright>2019 - 2020 AllPhi</Copyright>
     <PackageTags>Extends Api</PackageTags>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.0.3</Version>
+    <Version>1.0.5</Version>
   </PropertyGroup>
 
   <ItemGroup>

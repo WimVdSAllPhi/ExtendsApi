@@ -23,8 +23,10 @@ namespace ExtendsApi.DataLayer.Interfaces
         /// </summary>
         /// <returns>List of ALL elements in the table</returns>
         IQueryable<TEntity> Filter(Func<TEntity, bool> predicate);
+        IQueryable<TEntity> FilterOrder(Func<TEntity, bool> predicate, OrderExtention orderExtention);
 
         PagedResult<TEntity> FilterByPagination(Func<TEntity, bool> predicate, int page, int pageSize);
+        PagedResult<TEntity> FilterOrderByPagination(Func<TEntity, bool> predicate, OrderExtention orderExtention, int page, int pageSize);
 
         TEntity GetByOne(Func<TEntity, bool> predicate);
         TEntity GetByOneAndIncludes(Func<TEntity, bool> predicate, params Expression<Func<TEntity, object>>[] includes);

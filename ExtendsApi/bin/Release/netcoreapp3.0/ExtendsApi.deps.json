@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v3.0": {
-      "ExtendsApi/1.0.5": {
+      "ExtendsApi/1.0.6": {
         "dependencies": {
           "Microsoft.AspNetCore.Mvc.Core": "2.2.5",
           "Microsoft.EntityFrameworkCore": "3.1.0",
@@ -1021,7 +1021,7 @@
     }
   },
   "libraries": {
-    "ExtendsApi/1.0.5": {
+    "ExtendsApi/1.0.6": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

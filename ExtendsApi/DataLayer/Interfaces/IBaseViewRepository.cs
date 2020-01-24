@@ -5,7 +5,7 @@ using System.Linq.Expressions;
 
 namespace ExtendsApi.DataLayer.Interfaces
 {
-    public interface IBaseViewRepository<TEntity> 
+    public interface IBaseViewRepository<TEntity>
         where TEntity : class
     {
         /// <summary>
@@ -36,9 +36,13 @@ namespace ExtendsApi.DataLayer.Interfaces
         /// Instead use <see cref="FindByIncludeByPagination(int, int, Func&lt;TEntity, bool&gt;, Expression&lt;Func&lt;TEntity, object&gt;&gt;[])" />
         /// </summary>
         /// <returns>List of ALL elements in the table with the specifique includes</returns>
-        public IQueryable<TEntity> FindByInclude(Func<TEntity, bool> predicate, params Expression<Func<TEntity, object>>[] includes);
+        IQueryable<TEntity> FindByInclude(Func<TEntity, bool> predicate, params Expression<Func<TEntity, object>>[] includes);
 
-        public PagedResult<TEntity> FindByIncludeByPagination(int page, int pageSize, Func<TEntity, bool> predicate, params Expression<Func<TEntity, object>>[] includes);
+        IQueryable<TEntity> FindOrderByInclude(Func<TEntity, bool> predicate, OrderExtention orderExtention, params Expression<Func<TEntity, object>>[] includes);
+
+        PagedResult<TEntity> FindByIncludeByPagination(int page, int pageSize, Func<TEntity, bool> predicate, params Expression<Func<TEntity, object>>[] includes);
+
+        PagedResult<TEntity> FindByIncludeOrderByPagination(int page, int pageSize, Func<TEntity, bool> predicate, OrderExtention orderExtention, params Expression<Func<TEntity, object>>[] includes);
 
     }
 }

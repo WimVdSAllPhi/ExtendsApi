@@ -87,9 +87,19 @@ namespace ExtendsApi.DataLayer
             return table.IncludeMultiple(includes).Where(predicate).AsQueryable();
         }
 
+        public IQueryable<TEntity> FindOrderByInclude(Func<TEntity, bool> predicate, OrderExtention orderExtention, params Expression<Func<TEntity, object>>[] includes)
+        {
+            return OrderList<TEntity>.Order(table.IncludeMultiple(includes).Where(predicate).AsQueryable(), orderExtention);
+        }
+
         public PagedResult<TEntity> FindByIncludeByPagination(int page, int pageSize, Func<TEntity, bool> predicate, params Expression<Func<TEntity, object>>[] includes)
         {
             return table.IncludeMultiple(includes).Where(predicate).GetPaged(page, pageSize);
+        }
+
+        public PagedResult<TEntity> FindByIncludeOrderByPagination(int page, int pageSize, Func<TEntity, bool> predicate, OrderExtention orderExtention, params Expression<Func<TEntity, object>>[] includes)
+        {
+            return OrderList<TEntity>.Order(table.IncludeMultiple(includes).Where(predicate).AsQueryable(), orderExtention).GetPaged(page, pageSize);
         }
     }
 }

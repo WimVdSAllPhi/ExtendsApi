@@ -1,31 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dev01\\Desktop\\ExtendsApi\\ExtendsApi\\ExtendsApi.csproj": {}
+    "C:\\Users\\WimVanDerSchueren\\Desktop\\ExtendsApi\\ExtendsApi\\ExtendsApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dev01\\Desktop\\ExtendsApi\\ExtendsApi\\ExtendsApi.csproj": {
-      "version": "1.0.7",
+    "C:\\Users\\WimVanDerSchueren\\Desktop\\ExtendsApi\\ExtendsApi\\ExtendsApi.csproj": {
+      "version": "1.2.3",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dev01\\Desktop\\ExtendsApi\\ExtendsApi\\ExtendsApi.csproj",
+        "projectUniqueName": "C:\\Users\\WimVanDerSchueren\\Desktop\\ExtendsApi\\ExtendsApi\\ExtendsApi.csproj",
         "projectName": "ExtendsApi",
-        "projectPath": "C:\\Users\\dev01\\Desktop\\ExtendsApi\\ExtendsApi\\ExtendsApi.csproj",
-        "packagesPath": "C:\\Users\\dev01\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dev01\\Desktop\\ExtendsApi\\ExtendsApi\\obj\\",
+        "projectPath": "C:\\Users\\WimVanDerSchueren\\Desktop\\ExtendsApi\\ExtendsApi\\ExtendsApi.csproj",
+        "packagesPath": "C:\\Users\\WimVanDerSchueren\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\WimVanDerSchueren\\Desktop\\ExtendsApi\\ExtendsApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\dev01\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\WimVanDerSchueren\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "http://nuget.mbz.be/nuget": {},
+          "https://allphinuget.azurewebsites.net/nuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -48,7 +50,7 @@
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[3.1.0, )"
+              "version": "[3.1.1, )"
             },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
@@ -70,7 +72,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

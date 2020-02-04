@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
     <id>ExtendsApi</id>
-    <version>1.0.7</version>
+    <version>1.2.3</version>
     <authors>V.d.S Wim</authors>
     <owners>V.d.S Wim</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -12,7 +12,7 @@
     <dependencies>
       <group targetFramework=".NETCoreApp3.0">
         <dependency id="Microsoft.AspNetCore.Mvc.Core" version="2.2.5" exclude="Build,Analyzers" />
-        <dependency id="Microsoft.EntityFrameworkCore" version="3.1.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore" version="3.1.1" exclude="Build,Analyzers" />
         <dependency id="System.Configuration.ConfigurationManager" version="4.7.0" exclude="Build,Analyzers" />
       </group>
     </dependencies>

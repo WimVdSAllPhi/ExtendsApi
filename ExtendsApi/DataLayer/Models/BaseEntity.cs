@@ -3,7 +3,8 @@ using System.ComponentModel.DataAnnotations;
 
 namespace ExtendsApi.DataLayer.Models
 {
-    public class BaseEntity<Type> : MainBaseEntity<Type>, IBaseEntity<Type> where Type : struct
+    public class BaseEntity<IdType> : MainBaseEntity<IdType>
+        where IdType : struct
     {
         // Created
         [MaxLength(30)]
@@ -14,13 +15,5 @@ namespace ExtendsApi.DataLayer.Models
         [MaxLength(30)]
         public string ChangedBy { get; set; }
         public DateTime? ChangedDate { get; set; }
-    }
-
-    public interface IBaseEntity<Type> : IMainBaseEntity<Type> where Type : struct
-    {
-        string CreatedBy { get; set; }
-        DateTime? CreatedDate { get; set; }
-        string ChangedBy { get; set; }
-        DateTime? ChangedDate { get; set; }
     }
 }

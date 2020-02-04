@@ -3,20 +3,14 @@ using System.ComponentModel.DataAnnotations;
 
 namespace ExtendsApi.DataLayer.Models
 {
-    public class MainBaseEntity<Type> : IMainBaseEntity<Type> where Type : struct
+    public class MainBaseEntity<IdType> 
+        where IdType : struct
     {
         [Key]
-        public Type Id { get; set; }
+        public IdType Id { get; set; }
 
         // Deleted
         [DefaultValue(false)]
         public bool IsDeleted { get; set; } = false;
-    }
-
-
-    public interface IMainBaseEntity<Type> where Type : struct
-    {
-        Type Id { get; set; }
-        bool IsDeleted { get; set; }
     }
 }

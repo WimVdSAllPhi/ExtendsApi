@@ -78,6 +78,43 @@ namespace ExtendsApi.Methods
             return response;
         }
 
+        public static bool CheckContains(this Guid element, string contains)
+        {
+            var response =
+                element != null &&
+                element != Guid.Empty &&
+                element.ToString().Trim().ToLower().Contains(contains.Trim().ToLower());
+            return response;
+        }
+
+        public static bool CheckContains(this DateTimeOffset element, string contains)
+        {
+            var response = (
+                    element != null &&
+                    element != DateTimeOffset.MinValue &&
+                    element != default &&
+                    (
+                        element.ToString().Trim().ToLower().Contains(contains.Trim().ToLower()) ||
+                        element.ToString().Trim().ToLower().Contains(contains.Trim().ToLower())
+                    )
+                );
+            return response;
+        }
+
+        public static bool CheckContains(this DateTimeOffset? element, string contains)
+        {
+            var response = (
+                    element != null &&
+                    element.HasValue &&
+                    (
+                        element.Value.ToString().Trim().ToLower().Contains(contains.Trim().ToLower()) ||
+                        element.Value.ToString().Trim().ToLower().Contains(contains.Trim().ToLower())
+                    )
+                );
+            return response;
+        }
+
+
         public static bool CheckSomeFields(this object element, Dictionary<string, string> ContainsSomeFields)
         {
             var response = false;

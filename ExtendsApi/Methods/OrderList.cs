@@ -1,5 +1,4 @@
 ﻿using ExtendsApi.Models;
-using ExtendsApi.Models.DTO;
 using System.Linq;
 
 namespace ExtendsApi.Methods

@@ -185,4 +185,45 @@ namespace ExtendsApi.Models
             return true;
         }
     }
+    
+    public class LongFilter
+    {
+        public long[] Include { get; set; }
+        public long[] Exclude { get; set; }
+
+        public bool CheckFilter(long? element)
+        {
+            return CheckIncluds(element) && CheckExcluds(element);
+        }
+
+        private bool CheckIncluds(long? element)
+        {
+            if (element == null)
+            {
+                return false;
+            }
+
+            if (Include == null || Include.Length <= 0)
+            {
+                return true;
+            }
+
+            return Include.Any(x => x == element);
+        }
+
+        private bool CheckExcluds(long? element)
+        {
+            if (element == null)
+            {
+                return false;
+            }
+
+            if (Exclude == null || Exclude.Length <= 0)
+            {
+                return true;
+            }
+
+            return Exclude.Any(x => x == element);
+        }
+    }
 }

@@ -131,6 +131,14 @@ namespace ExtendsApi.Methods
                 element.Value.ToString().Trim().ToLower().Contains(contains.Trim().ToLower());
             return response;
         }
+        
+        public static bool CheckContains(this Enum element, string contains)
+        {
+            var response =
+                element != null &&
+                Enum.GetName(element.GetType(), element).ToString().Trim().ToLower().Contains(contains.Trim().ToLower());
+            return response;
+        }
 
 
         public static bool CheckSomeFields(this object element, Dictionary<string, string> ContainsSomeFields)

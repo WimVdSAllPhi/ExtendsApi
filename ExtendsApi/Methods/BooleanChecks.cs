@@ -113,6 +113,24 @@ namespace ExtendsApi.Methods
                 );
             return response;
         }
+        
+        public static bool CheckContains(this long element, string contains)
+        {
+            var response =
+                element != 0 &&
+                element != default &&
+                element.ToString().Trim().ToLower().Contains(contains.Trim().ToLower());
+            return response;
+        }
+
+        public static bool CheckContains(this long? element, string contains)
+        {
+            var response =
+                element != null &&
+                element.HasValue &&
+                element.Value.ToString().Trim().ToLower().Contains(contains.Trim().ToLower());
+            return response;
+        }
 
 
         public static bool CheckSomeFields(this object element, Dictionary<string, string> ContainsSomeFields)
